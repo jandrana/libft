@@ -2,6 +2,8 @@
 
 <p align="justify">The <code>libft</code> project is the first one of my journey as a 42 student and is going to play a crucial role in upcoming assignments, since the library created here is going to be used in future C projects. Here, I created my very first C library from scratch.<br><br>This project pushed me to dig deep into how the original replicated functions work, helping me develop a comprehensive understanding of their inner workings and how to enhance them. It's not just about meeting project requirements; it's about aiming for excellence and crafting a library that I will use in future projects.</p>
 
+- **Reminder:** ❗️ You can check all my 42 projects at <a href="github.com/jandrana/42-Cursus">42 Cursus</a>
+
 ## Table of Contents
 
 <table>
@@ -13,7 +15,7 @@
     <tbody>
         <tr>
             <td width="10%"><a href="./Makefile"><code>Makefile</code></a></td>
-            <td width="40%">The Makefile for building the `libft` library.</td>
+            <td width="40%">The Makefile for building the <code>libft</code> library.</td>
             <td width="10%"><a href="./libft.h"><code>libft.h</code></a></td>
             <td width="40%">The header file containing function prototypes and necessary definitions.</td>
         </tr>
@@ -204,3 +206,69 @@
         </tr>
     </tbody>
 </table>
+
+## Usage
+
+### Supported Platforms
+
+- **Linux**
+- **macOS**
+
+### Prerequisites
+
+Before using Libft, you need:
+
+- **GCC**: The GNU Compiler Collection.
+
+### Compilation
+
+Make use of the `make` command to build and compile the library
+
+Rules Available in the Makefile
+
+<table>
+    <thead>
+        <th>Rule</th>
+        <th>Description</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>all</td>
+            <td>Compiles the library without the bonus files</td>
+        </tr>
+        <tr>
+            <td>bonus</td>
+            <td>Compiles the library with bonus files</td>
+        </tr>
+        <tr>
+            <td>clean</td>
+            <td>Removes every created object</td>
+        </tr>
+        <tr>
+            <td>fclean</td>
+            <td>Runs <code>make clean</code> and removes the libft.a</td>
+        </tr>
+        <tr>
+            <td>re</td>
+            <td>Runs <code>make fclean</code> and then <code>make all</code></td>
+        </tr>
+        <tr>
+            <td>rebonus</td>
+            <td>Runs <code>make fclean</code> and then <code>make bonus</code></td>
+        </tr>
+    </tbody>
+</table>
+
+### Compilation Examples
+
+- Compile without bonus:
+```bash
+cd libft
+make all
+```
+
+- Delete objects and libft.a and compile with bonus:
+```bash
+make rebonus
+
+```
