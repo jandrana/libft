@@ -6,7 +6,7 @@
 #    By: ana-cast <ana-cast@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/15 21:00:35 by ana-cast          #+#    #+#              #
-#    Updated: 2023/10/19 03:57:11 by ana-cast         ###   ########.fr        #
+#    Updated: 2023/11/29 20:50:21 by ana-cast         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,19 +24,66 @@ RM = rm -f
 ##                              SOURCES AND OBJECTS                           ##
 ################################################################################
 
-SRCS = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
-	ft_isascii.c ft_isdigit.c ft_isprint.c ft_itoa.c ft_memchr.c \
-	ft_memcmp.c ft_memcpy.c ft_memmove.c ft_memset.c ft_putchar_fd.c \
-	ft_putendl_fd.c ft_putnbr_fd.c ft_putstr_fd.c ft_split.c ft_strchr.c \
-	ft_strdup.c ft_striteri.c ft_strjoin.c ft_strlcat.c ft_strlcpy.c \
-	ft_strlen.c ft_strmapi.c ft_strncmp.c ft_strnstr.c ft_strrchr.c \
-	ft_strtrim.c ft_substr.c ft_tolower.c ft_toupper.c
-	
-OBJECTS = $(SRCS:.c=.o)
+CC_SRCS = original_functions/character_classification/ft_isascii.c \
+	original_functions/character_classification/ft_isdigit.c \
+	original_functions/character_classification/ft_isprint.c \
+	original_functions/character_classification/ft_isalnum.c \
+	original_functions/character_classification/ft_isalpha.c
 
-BONUS_SR = ft_lstadd_back_bonus.c ft_lstadd_front_bonus.c ft_lstclear_bonus.c \
-	ft_lstdelone_bonus.c ft_lstiter_bonus.c ft_lstlast_bonus.c \
-	ft_lstnew_bonus.c ft_lstsize_bonus.c ft_lstmap_bonus.c
+CC2_SRCS = original_functions/case_conversion/ft_tolower.c \
+	original_functions/case_conversion/ft_toupper.c
+
+MM_SRCS = original_functions/memory_manipulation/ft_bzero.c \
+	original_functions/memory_manipulation/ft_calloc.c \
+	original_functions/memory_manipulation/ft_memcmp.c \
+	original_functions/memory_manipulation/ft_memcpy.c \
+	original_functions/memory_manipulation/ft_memmove.c \
+	original_functions/memory_manipulation/ft_memset.c \
+	original_functions/memory_manipulation/ft_memchr.c
+
+SM_SRCS = original_functions/string_manipulation/ft_atoi.c \
+	original_functions/string_manipulation/ft_strlcat.c \
+	original_functions/string_manipulation/ft_strlcpy.c \
+	original_functions/string_manipulation/ft_strlen.c
+
+SS_SRCS = original_functions/string_search/ft_strchr.c \
+	original_functions/string_search/ft_strncmp.c \
+	original_functions/string_search/ft_strnstr.c \
+	original_functions/string_search/ft_strrchr.c
+
+A_SRCS = additional_functions/ft_itoa.c \
+	additional_functions/ft_split.c \
+	additional_functions/ft_strdup.c \
+	additional_functions/ft_striteri.c \
+	additional_functions/ft_strjoin.c \
+	additional_functions/ft_strmapi.c \
+	additional_functions/ft_strtrim.c \
+	additional_functions/ft_substr.c
+
+AO_SRCS = additional_functions/output_functions/ft_putchar_fd.c \
+	additional_functions/output_functions/ft_putendl_fd.c \
+	additional_functions/output_functions/ft_putnbr_fd.c \
+	additional_functions/output_functions/ft_putstr_fd.c
+	
+CC_OBJECTS = $(CC_SRCS:.c=.o)
+CC2_OBJECTS = $(CC2_SRCS:.c=.o)
+MM_OBJECTS = $(MM_SRCS:.c=.o)
+SM_OBJECTS = $(SM_SRCS:.c=.o)
+SS_OBJECTS = $(SS_SRCS:.c=.o)
+A_OBJECTS = $(A_SRCS:.c=.o)
+AO_OBJECTS = $(AO_SRCS:.c=.o)
+
+OBJECTS = $(CC_OBJECTS) $(CC2_OBJECTS) $(MM_OBJECTS) $(SM_OBJECTS) $(SS_OBJECTS) $(A_OBJECTS) $(AO_OBJECTS)
+
+BONUS_SR = bonus_functions/ft_lstadd_back_bonus.c \
+	bonus_functions/ft_lstadd_front_bonus.c \
+	bonus_functions/ft_lstclear_bonus.c \
+	bonus_functions/ft_lstdelone_bonus.c \
+	bonus_functions/ft_lstiter_bonus.c \
+	bonus_functions/ft_lstlast_bonus.c \
+	bonus_functions/ft_lstnew_bonus.c \
+	bonus_functions/ft_lstsize_bonus.c \
+	bonus_functions/ft_lstmap_bonus.c
 	
 BONUS_OB = $(BONUS_SR:.c=.o)
 

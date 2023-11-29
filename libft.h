@@ -6,7 +6,7 @@
 /*   By: ana-cast <ana-cast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 12:46:09 by ana-cast          #+#    #+#             */
-/*   Updated: 2023/09/18 13:12:24 by ana-cast         ###   ########.fr       */
+/*   Updated: 2023/11/29 21:04:03 by ana-cast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -320,16 +320,74 @@ typedef struct s_list
 	struct s_list	*next;
 }	t_list;
 
+/**
+ * @brief Creates a new list with the content specified
+ * @param content Content to fill the new list with
+ * @return Returns the newly created list
+*/
 t_list			*ft_lstnew(void *content);
+
+/**
+ * @brief Adds a new element at the beginning of the list
+ * @param lst Pointer to the first element of the list
+ * @param new Element to add to the list
+ * @return None
+*/
 void			ft_lstadd_front(t_list **lst, t_list *new);
+
+/**
+ * @brief Get the number of elements of the list
+ * @param lst Pointer to the first element of the list
+ * @return Returns the number of elements of such list
+*/
 int				ft_lstsize(t_list *lst);
 
+/**
+ * @brief Get the last element of a list
+ * @param lst Pointer to the first element of the list
+ * @return Returns the last element of such list
+*/
 t_list			*ft_lstlast(t_list *lst);
+
+/**
+ * @brief Adds a new element at the end of the list
+ * @param lst Pointer to the first element of the list
+ * @param new Element to add to the list
+ * @return None
+*/
 void			ft_lstadd_back(t_list **lst, t_list *new);
 
+/**
+ * @brief Delete a node from a list without deleting its content.
+ * @param lst Pointer to the first element of the list
+ * @param del pointer to the function used to free the node's content
+ * @return None
+*/
 void			ft_lstdelone(t_list *lst, void (*del)(void *));
+
+/**
+ * @brief Delete and free the memory of a list node and its consecutives.
+ * @param lst Pointer to the first element of the list
+ * @param del pointer to the function used to free the nodes' content
+ * @return None
+*/
 void			ft_lstclear(t_list **lst, void (*del)(void *));
+
+/**
+ * @brief Apply a function to each element of a list.
+ * @param lst Pointer to the first element of the list
+ * @param f pointer to the function used for each node
+ * @return None
+*/
 void			ft_lstiter(t_list *lst, void (*f)(void *));
+
+/**
+ * @brief Creates a list by iterating and applying a function of a existing list.
+ * @param lst Pointer to the first element of the list
+ * @param f pointer to the function used for each node
+ * @param del pointer to the function used to free the nodes'content if necessary
+ * @return Returns the newly created list
+*/
 t_list			*ft_lstmap(t_list *lst, void *(*f)(void *),
 					void (*del)(void *));
 
