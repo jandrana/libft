@@ -6,9 +6,11 @@
 /*   By: ana-cast <ana-cast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/11 15:25:41 by ana-cast          #+#    #+#             */
-/*   Updated: 2023/09/18 11:37:22 by ana-cast         ###   ########.fr       */
+/*   Updated: 2023/11/29 23:24:29 by ana-cast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../../libft.h"
 
 int	ft_strlen(const char *str)
 {

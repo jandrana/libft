@@ -6,9 +6,11 @@
 /*   By: ana-cast <ana-cast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 13:11:35 by ana-cast          #+#    #+#             */
-/*   Updated: 2023/10/19 02:40:02 by ana-cast         ###   ########.fr       */
+/*   Updated: 2023/11/29 23:24:18 by ana-cast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../../libft.h"
 
 int	ft_atoi(const char *str)
 {
