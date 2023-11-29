@@ -2,7 +2,7 @@
 
 <p align="justify">The <code>libft</code> project is the first one of my journey as a 42 student and is going to play a crucial role in upcoming assignments, since the library created here is going to be used in future C projects. Here, I created my very first C library from scratch.<br><br>This project pushed me to dig deep into how the original replicated functions work, helping me develop a comprehensive understanding of their inner workings and how to enhance them. It's not just about meeting project requirements; it's about aiming for excellence and crafting a library that I will use in future projects.</p>
 
-- **Reminder:** ❗️ You can check all my 42 projects at <a href="github.com/jandrana/42-Cursus">42 Cursus</a>
+- **Reminder:** ❗️ You can check all my 42 projects at <a href="https://github.com/jandrana/42-Cursus">42 Cursus</a>
 
 ## Table of Contents
 
