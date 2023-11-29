@@ -6,7 +6,7 @@
 /*   By: ana-cast <ana-cast@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 12:46:09 by ana-cast          #+#    #+#             */
-/*   Updated: 2023/11/29 23:21:31 by ana-cast         ###   ########.fr       */
+/*   Updated: 2023/11/30 00:03:42 by ana-cast         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
  * This contains the prototypes fot the libft library
  * and the structure used by the list's functions
  * 
- * @author Ana Alejandra Castillejo Muñoz (github: Jandrana)
+ * @author Ana Alejandra Castillejo Muñoz (github: jandrana)
 */
 
 #ifndef LIBFT_H
